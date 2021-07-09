@@ -239,7 +239,8 @@ function sanitizeHtml(
         } else if (attribute === 'href' || attribute === 'src') {
           const value = element.getAttribute(attribute) ?? '';
           if (!allowedSchemas.includes(value.toLowerCase().split(':')[0])) {
-            element.removeAttribute(attribute);
+            // Check24
+            // element.removeAttribute(attribute);
           } else if (attribute === 'href' && rewriteExternalLinks) {
             element.setAttribute(attribute, rewriteExternalLinks(value));
           } else if (attribute === 'src' && rewriteExternalResources) {
