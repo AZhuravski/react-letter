@@ -42,6 +42,7 @@ export const allowedTags = {
   h5: ['align', 'class', 'dir', 'id', 'style'],
   h6: ['align', 'class', 'dir', 'id', 'style'],
   hr: ['align', 'size', 'width'],
+  head: [],
   i: ['class', 'id', 'style'],
   img: [
     'align',
