@@ -155,8 +155,6 @@ function sanitizeHtml(
 ) {
   if (noWrapper) id = '';
   const doc = new DOMParser().parseFromString(input, 'text/html');
-    
-    console.log('1.after DOMParser:',doc);
 
   // Ensure allowed schemas are lower case.
   allowedSchemas = Array.isArray(allowedSchemas)
@@ -269,8 +267,6 @@ function sanitizeHtml(
       toRemove.push(element);
     }
   }
-    
-  console.log('2. toRemove:', toRemove); 
 
   for (let element of toRemove) {
     try {
@@ -345,7 +341,6 @@ function sanitizeHtml(
   });
 
   // Wrap body inside of a div with the generated ID.
-    console.log('3. doc:', doc); 
   if (noWrapper) {
     return doc.body.innerHTML;
   } else {
