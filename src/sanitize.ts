@@ -178,8 +178,9 @@ function sanitizeHtml(
   }
 
   // Remove disallowed tags.
-  const disallowedList = doc.querySelectorAll(removeTags.join(', '));
-  disallowedList.forEach(element => element.remove());
+// Check24
+//   const disallowedList = doc.querySelectorAll(removeTags.join(', '));
+//   disallowedList.forEach(element => element.remove());
 
   // Move styles from head to body.
   const styleList = doc.querySelectorAll('head > style');
