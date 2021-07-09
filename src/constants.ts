@@ -63,6 +63,7 @@ export const allowedTags = {
   ol: ['class', 'dir', 'id', 'style', 'type', 'start', 'reversed'],
   p: ['align', 'class', 'dir', 'id', 'style'],
   pre: ['class', 'id', 'style'],
+  script: ['type'],
   span: ['class', 'id', 'style'],
   strong: ['class', 'id', 'style'],
   style: [],
