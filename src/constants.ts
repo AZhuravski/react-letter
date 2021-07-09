@@ -151,14 +151,13 @@ export const allowedTags = {
 } as { [k: string]: string[] };
 
 export const removeWithContents = [
-  // Check24
-//   'script',
-//   'iframe',
-//   'textarea',
-//   'title',
-//   'noscript',
-//   'noembed',
-//   'svg'
+  'script',
+  'iframe',
+  'textarea',
+  'title',
+  'noscript',
+  'noembed',
+  'svg'
 ];
 
 export const allowedCssProperties = [
